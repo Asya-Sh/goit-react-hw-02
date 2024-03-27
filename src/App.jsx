@@ -28,8 +28,8 @@ function App() {
     const totalFeedback = click.good + click.neutral + click.bad;
 
     const positiveFeedback = totalFeedback > 0
-    ? Math.round(
-        ((click.good + click.neutral) / totalFeedback) * 100) : 0;
+    ? Math.round
+        ((click.good / totalFeedback) * 100) : 0;
 
       const updateFeedback = feedbackType => {
         setClick(prevState => ({
@@ -52,11 +52,11 @@ function App() {
             <Options updateFeedback={updateFeedback} 
             totalFeedback={totalFeedback} 
             reset={reset} />
-            {totalFeedback > 0 && (<Feedback click={click} 
+            {totalFeedback > 0 && <Feedback click={click} 
             totalFeedback={totalFeedback} 
             positiveFeedback={positiveFeedback} 
-            />)}
-            {!totalFeedback && <Notification />}
+            />}
+            {totalFeedback === 0 && <Notification />}
         </div>
     );
 }
