@@ -4,7 +4,7 @@
     font-weight: 400;
 
     color: #000000;
-    background-color: #6e6c6c;
+    background-color: #ffffff;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -37,4 +37,8 @@ ol {
 img {
     display: block;
     max-width: 100%;
+}
+
+button {
+    cursor: pointer;
 }

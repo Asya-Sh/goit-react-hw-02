@@ -1,15 +1,17 @@
-import { useState } from 'react'
+import Description from './components/Description/Description';
+import Feedback from './components/Feedback/Feedback';
+import Options from './components/Options/Options';
 import './index.css';
 import 'modern-normalize';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-
-    </>
-  )
+      <>
+          <Description />
+          <Options />
+          <Feedback />
+      </>
+  );
 }
 
-export default App
+export default App;
