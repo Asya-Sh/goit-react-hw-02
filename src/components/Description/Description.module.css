@@ -1,3 +1,8 @@
-.title {}
-
-.text {}
+.title {
+    font-weight: 900;
+    font-size: 56px;
+    margin-bottom: 20px;
+    background: linear-gradient(250deg, greenyellow 15%, rgb(246, 255, 0) 35%, rgb(252, 0, 0) 45%, rgb(93, 64, 226) 70%);
+    -webkit-text-fill-color: transparent ;
+    -webkit-background-clip: text;
+}

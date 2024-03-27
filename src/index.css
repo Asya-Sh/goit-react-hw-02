@@ -1,21 +1,36 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 600;
 
-    color: #000000;
-    background-color: #ffffff;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    color: #110909;
+    background-color: #161623;
+    font-size: 20px;
+    background-image: url('./img/photo_cafe.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 body {
     font-family: sans-serif;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+   
+   
 }
+
+.wrapper_cafe {
+    box-shadow: 0 0 35px rgb(0,0,0, 50%);
+    border-radius: 20px;
+    width: 870px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 30%);
+    backdrop-filter: blur(2px);
+    padding: 30px;}
 
 h1,
 h2,
